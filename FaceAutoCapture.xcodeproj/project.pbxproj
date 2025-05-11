@@ -6,30 +6,25 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BEA601692DCF2B890032D506 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA6015F2DCF2B890032D506 /* AppDelegate.swift */; };
+		BEA6016A2DCF2B890032D506 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA601662DCF2B890032D506 /* SceneDelegate.swift */; };
+		BEA6016B2DCF2B890032D506 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA601672DCF2B890032D506 /* ViewController.swift */; };
+		BEA6016C2DCF2B890032D506 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEA601602DCF2B890032D506 /* Assets.xcassets */; };
+		BEA6016E2DCF2B890032D506 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEA601632DCF2B890032D506 /* LaunchScreen.storyboard */; };
+		BEA6016F2DCF2B890032D506 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEA601652DCF2B890032D506 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		BEA601472DCF2B5C0032D506 /* FaceAutoCapture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceAutoCapture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEA6015F2DCF2B890032D506 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BEA601602DCF2B890032D506 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEA601612DCF2B890032D506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEA601622DCF2B890032D506 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BEA601642DCF2B890032D506 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BEA601662DCF2B890032D506 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BEA601672DCF2B890032D506 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		BEA601592DCF2B5E0032D506 /* Exceptions for "FaceAutoCapture" folder in "FaceAutoCapture" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = BEA601462DCF2B5C0032D506 /* FaceAutoCapture */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		BEA601492DCF2B5C0032D506 /* FaceAutoCapture */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				BEA601592DCF2B5E0032D506 /* Exceptions for "FaceAutoCapture" folder in "FaceAutoCapture" target */,
-			);
-			path = FaceAutoCapture;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BEA601442DCF2B5C0032D506 /* Frameworks */ = {
@@ -45,7 +40,7 @@
 		BEA6013E2DCF2B5C0032D506 = {
 			isa = PBXGroup;
 			children = (
-				BEA601492DCF2B5C0032D506 /* FaceAutoCapture */,
+				BEA601682DCF2B890032D506 /* FaceAutoCapture */,
 				BEA601482DCF2B5C0032D506 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +51,36 @@
 				BEA601472DCF2B5C0032D506 /* FaceAutoCapture.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		BEA601682DCF2B890032D506 /* FaceAutoCapture */ = {
+			isa = PBXGroup;
+			children = (
+				BEA601702DCF2B900032D506 /* System */,
+				BEA601712DCF2BCD0032D506 /* Controller */,
+				BEA601602DCF2B890032D506 /* Assets.xcassets */,
+				BEA601612DCF2B890032D506 /* Info.plist */,
+				BEA601632DCF2B890032D506 /* LaunchScreen.storyboard */,
+				BEA601652DCF2B890032D506 /* Main.storyboard */,
+			);
+			path = FaceAutoCapture;
+			sourceTree = "<group>";
+		};
+		BEA601702DCF2B900032D506 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				BEA6015F2DCF2B890032D506 /* AppDelegate.swift */,
+				BEA601662DCF2B890032D506 /* SceneDelegate.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		BEA601712DCF2BCD0032D506 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BEA601672DCF2B890032D506 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,9 +97,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				BEA601492DCF2B5C0032D506 /* FaceAutoCapture */,
 			);
 			name = FaceAutoCapture;
 			packageProductDependencies = (
@@ -122,6 +144,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEA6016C2DCF2B890032D506 /* Assets.xcassets in Resources */,
+				BEA6016E2DCF2B890032D506 /* LaunchScreen.storyboard in Resources */,
+				BEA6016F2DCF2B890032D506 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,10 +157,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEA601692DCF2B890032D506 /* AppDelegate.swift in Sources */,
+				BEA6016A2DCF2B890032D506 /* SceneDelegate.swift in Sources */,
+				BEA6016B2DCF2B890032D506 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BEA601632DCF2B890032D506 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEA601622DCF2B890032D506 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BEA601652DCF2B890032D506 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEA601642DCF2B890032D506 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		BEA6015B2DCF2B5E0032D506 /* Debug */ = {
@@ -145,6 +192,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6A3422XNLB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FaceAutoCapture/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -157,7 +205,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = thirdcode.FaceAutoCapture;
+				PRODUCT_BUNDLE_IDENTIFIER = com.murad.aihomewrok;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -172,6 +220,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6A3422XNLB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FaceAutoCapture/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -184,7 +233,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = thirdcode.FaceAutoCapture;
+				PRODUCT_BUNDLE_IDENTIFIER = com.murad.aihomewrok;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
